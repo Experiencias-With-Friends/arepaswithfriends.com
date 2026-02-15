@@ -6,7 +6,7 @@ export const es = {
 
   // Nav
   navExperiencia: 'La experiencia',
-  navQueVasAHacer: 'Qué vas a hacer',
+  navQueVasAHacer: '¿Qué vas a hacer?',
   navLugar: 'El lugar',
   navFotos: 'Fotos',
   navFaq: 'FAQ',
@@ -29,8 +29,8 @@ export const es = {
   expText:
     'Viví una experiencia gastronómica de 3 horas donde aprendés a hacer arepas desde cero, participás en todo el proceso y disfrutás una degustación con distintos rellenos. Pensada para grupos de hasta 10 personas, disponible en nuestro espacio o a domicilio. No necesitás experiencia previa, solo ganas de compartir y disfrutar.',
 
-  // Qué vas a hacer
-  whatTitle: 'Qué vas a hacer',
+  // ¿Qué vas a hacer?
+  whatTitle: '¿Qué vas a hacer?',
   whatBullet1: 'Conocer los ingredientes y preparar la masa desde cero',
   whatBullet2: 'Formar y cocinar tus propias arepas',
   whatBullet3: 'Aprender tips simples para que queden perfectas',
@@ -80,7 +80,7 @@ export const es = {
   faqQ3: '¿Dónde se realiza la experiencia?',
   faqA3: 'Sugerimos realizarlo en nuestro espacio, el cual cuenta con las comodidades y está pensado para disfrutar por completo la experiencia. Sin embargo, podemos ir a tu domicilio.',
   faqQ4: '¿Cómo funciona la experiencia a domicilio?',
-  faqA4: 'Nosotros llevamos todos los materiales e ingredientes necesarios para la elaboración de las arepas. Solo necesitamos una cocina disponible para preparar las arepas y vajilla completa acorde a la cantidad de personas. Para más detalles, condiciones y disponibilidad, consultanos por privado vía WhatsApp.',
+  faqA4: 'Nosotros llevamos todos los materiales e ingredientes necesarios para la elaboración de las arepas. Solo necesitamos una cocina disponible para preparar las arepas y vajilla completa acorde a la cantidad de personas. Para más detalles, condiciones y disponibilidad, consultános por privado vía WhatsApp.',
   faqQ5: '¿Qué incluye la experiencia?',
   faqA5: 'Participación completa en la elaboración, degustación de arepas con distintos rellenos previamente preparados y 1 bebida sin alcohol individual por persona. Pero tenemos a la venta variedad de bebidas adicionales. Consultar al momento de la reserva.',
   faqQ6: '¿Necesito saber cocinar?',

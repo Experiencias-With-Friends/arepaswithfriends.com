@@ -27,6 +27,7 @@ export default {
         },
       },
       fontFamily: {
+        display: ['Cormorant Garamond', 'Georgia', 'serif'],
         heading: ['Playfair Display', 'Georgia', 'serif'],
         body: ['Inter', 'system-ui', 'sans-serif'],
       },

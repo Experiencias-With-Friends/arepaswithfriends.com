@@ -17,7 +17,7 @@ import { IMAGES, INSTAGRAM_URL, whatsappUrl } from '../config';
         <span class="i18n-en">The experience</span>
       </a>
       <a href="/#que-vas-a-hacer" class="text-white/90 hover:text-arepa-light transition-colors text-sm font-medium">
-        <span class="i18n-es">Qué vas a hacer</span>
+        <span class="i18n-es">¿Qué vas a hacer?</span>
         <span class="i18n-en">What you'll do</span>
       </a>
       <a href="/#lugar" class="text-white/90 hover:text-arepa-light transition-colors text-sm font-medium">
@@ -84,7 +84,7 @@ import { IMAGES, INSTAGRAM_URL, whatsappUrl } from '../config';
     <span class="i18n-en">The experience</span>
   </a>
   <a href="/#que-vas-a-hacer" class="mobile-nav-link text-white text-xl font-medium hover:text-arepa-light transition-colors">
-    <span class="i18n-es">Qué vas a hacer</span>
+    <span class="i18n-es">¿Qué vas a hacer?</span>
     <span class="i18n-en">What you'll do</span>
   </a>
   <a href="/#lugar" class="mobile-nav-link text-white text-xl font-medium hover:text-arepa-light transition-colors">
@@ -170,7 +170,7 @@ import { IMAGES, INSTAGRAM_URL, whatsappUrl } from '../config';
     function updateWhatsappLinks() {
       var lang = document.documentElement.classList.contains('lang-en') ? 'en' : 'es';
       var number = document.body.dataset.waNumber || '549XXXXXXXXXX';
-      var textEs = 'Hola! Quiero reservar la experiencia de arepas. Somos ___ personas. Me gustaría para el día ___ / horario ___. ¿Hay disponibilidad?';
+      var textEs = '¡Hola! Quiero reservar la experiencia de arepas. Somos ___ personas. Me gustaría para el día ___ / horario ___. ¿Hay disponibilidad?';
       var textEn = "Hi! I'd like to book the arepa experience. We are ___ people. I'd like it for ___ / time ___. Is it available?";
       var text = lang === 'en' ? textEn : textEs;
       var url = 'https://wa.me/' + number + '?text=' + encodeURIComponent(text);
