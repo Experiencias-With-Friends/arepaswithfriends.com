@@ -30,7 +30,7 @@ export const SITE_URL = 'https://arepaswithfriends.com';
 // Colocar las imagenes en /public/images/
 // ============================================
 export const IMAGES = {
-  logo: '/images/logo.svg',
+  logo: '/images/logo.png',
   hero: '/images/hero_arepas.jpg',
   experiencia: '/images/experiencia.jpg',
   queVasAHacer: '/images/que_vas_a_hacer.jpg',
