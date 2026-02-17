@@ -3,6 +3,9 @@
 // Editar estos valores para personalizar el sitio
 // ============================================
 
+/** Modo mantenimiento: true = muestra solo el hero sin navegacion ni links */
+export const MAINTENANCE_MODE = true;
+
 /** Numero de WhatsApp en formato internacional (sin +) */
 export const WHATSAPP_NUMBER = '549XXXXXXXXXX';
 

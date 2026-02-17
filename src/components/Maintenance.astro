@@ -1,0 +1,38 @@
+---
+import { IMAGES } from '../config';
+---
+
+<section class="relative min-h-screen flex items-center justify-center parallax-bg" style={`background-image: linear-gradient(rgba(59,36,23,0.6), rgba(59,36,23,0.75)), url('${IMAGES.hero}');`}>
+  <div class="max-w-4xl mx-auto px-4 text-center text-white py-32">
+    <!-- Logo -->
+    <img src={IMAGES.logo} alt="Arepas With Friends" class="h-24 md:h-32 w-auto mx-auto mb-10" />
+
+    <!-- Title -->
+    <h1 class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-display font-normal tracking-wide mb-6 drop-shadow-lg">
+      <span class="i18n-es">AREPAS WITH FRIENDS</span>
+      <span class="i18n-en">AREPAS WITH FRIENDS</span>
+    </h1>
+
+    <!-- Subtitle -->
+    <p class="text-xl sm:text-2xl md:text-3xl font-light mb-8 max-w-3xl mx-auto leading-snug">
+      <span class="i18n-es">Aprende a hacer auténticas arepas venezolanas con tus amigos:</span>
+      <span class="i18n-en">Learn to make authentic Venezuelan arepas with your friends:</span>
+    </p>
+    <p class="text-xl sm:text-2xl md:text-3xl font-light mb-12 max-w-3xl mx-auto">
+      <span class="i18n-es">cocina, risas y degustación</span>
+      <span class="i18n-en">cooking, laughs, and tasting</span>
+    </p>
+
+    <!-- Coming soon message -->
+    <div class="inline-block bg-white/15 backdrop-blur-sm border border-white/20 rounded-2xl px-8 py-5">
+      <p class="text-lg md:text-xl text-arepa-light font-heading font-bold mb-1">
+        <span class="i18n-es">Próximamente</span>
+        <span class="i18n-en">Coming soon</span>
+      </p>
+      <p class="text-sm text-white/60">
+        <span class="i18n-es">Estamos preparando algo increíble. ¡Volvé pronto!</span>
+        <span class="i18n-en">We're cooking up something amazing. Come back soon!</span>
+      </p>
+    </div>
+  </div>
+</section>

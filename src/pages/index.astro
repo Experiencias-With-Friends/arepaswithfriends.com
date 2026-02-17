@@ -9,18 +9,26 @@ import Photos from '../components/Photos.astro';
 import Reserve from '../components/Reserve.astro';
 import Footer from '../components/Footer.astro';
 import WhatsAppFloat from '../components/WhatsAppFloat.astro';
+import Maintenance from '../components/Maintenance.astro';
+import { MAINTENANCE_MODE } from '../config';
 ---
 
 <Layout>
-  <Header />
-  <main>
-    <Hero />
-    <Experience />
-    <WhatYouDo />
-    <ThePlace />
-    <Photos />
-    <Reserve />
-  </main>
-  <Footer />
-  <WhatsAppFloat />
+  {MAINTENANCE_MODE ? (
+    <Maintenance />
+  ) : (
+    <>
+      <Header />
+      <main>
+        <Hero />
+        <Experience />
+        <WhatYouDo />
+        <ThePlace />
+        <Photos />
+        <Reserve />
+      </main>
+      <Footer />
+      <WhatsAppFloat />
+    </>
+  )}
 </Layout>
