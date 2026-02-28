@@ -78,7 +78,7 @@ export const es = {
   faqQ2: '¿Para cuántas personas es?',
   faqA2: 'Está pensada para grupos entre 4 y 10 personas.',
   faqQ3: '¿Dónde se realiza la experiencia?',
-  faqA3: 'Sugerimos realizarlo en nuestro quincho, el cual cuenta con las comodidades y está pensado para disfrutar por completo la experiencia. Sin embargo, podemos ir a tu domicilio.',
+  faqA3: 'Sugerimos realizarlo en nuestro quincho, el cual cuenta con todas las comodidades y elementos necesarios para disfrutar por completo la experiencia. Sin embargo, podemos ir a tu domicilio si contás con el espacio, utensilios y vajilla completa para tu grupo de invitados.',
   faqQ4: '¿Cómo funciona la experiencia a domicilio?',
   faqA4: 'Nosotros llevamos todos los materiales e ingredientes necesarios para la elaboración de las arepas. Solo necesitamos una cocina disponible para preparar las arepas y vajilla completa acorde a la cantidad de personas. Para más detalles, condiciones y disponibilidad, consultanos por privado vía WhatsApp.',
   faqQ5: '¿Qué incluye la experiencia?',
