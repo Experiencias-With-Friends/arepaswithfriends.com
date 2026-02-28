@@ -32,7 +32,10 @@ jobs:
         run: npm ci
 
       - name: Build site
-        run: npm run build
+        run: |
+          printf "MAINTENANCE_MODE=%s\nWHATSAPP_NUMBER=%s\nINSTAGRAM_URL=%s\nFORM_ENDPOINT=%s\n" \
+            "$MAINTENANCE_MODE" "$WHATSAPP_NUMBER" "$INSTAGRAM_URL" "$FORM_ENDPOINT" > .env.production
+          npm run build
         env:
           WHATSAPP_NUMBER: ${{ secrets.WHATSAPP_NUMBER }}
           FORM_ENDPOINT: ${{ secrets.FORM_ENDPOINT }}
