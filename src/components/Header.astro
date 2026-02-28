@@ -169,7 +169,8 @@ import { IMAGES, INSTAGRAM_URL, whatsappUrl } from '../config';
     // WhatsApp links — set href dynamically based on language
     function updateWhatsappLinks() {
       var lang = document.documentElement.classList.contains('lang-en') ? 'en' : 'es';
-      var number = document.body.dataset.waNumber || '549XXXXXXXXXX';
+      var enc = JSON.parse(document.body.dataset.waEncoded || '[]');
+      var number = enc.map(function(c) { return String.fromCharCode(c ^ 42); }).join('');
       var textEs = '¡Hola! Quiero reservar la experiencia de arepas. Somos ___ personas. Me gustaría para el día ___ / horario ___. ¿Hay disponibilidad?';
       var textEn = "Hi! I'd like to book the arepa experience. We are ___ people. I'd like it for ___ / time ___. Is it available?";
       var text = lang === 'en' ? textEn : textEs;

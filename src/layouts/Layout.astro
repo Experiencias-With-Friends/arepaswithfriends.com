@@ -1,5 +1,5 @@
 ---
-import { SITE_NAME, SITE_URL, IMAGES, WHATSAPP_NUMBER } from '../config';
+import { SITE_NAME, SITE_URL, IMAGES, WHATSAPP_NUMBER_ENCODED } from '../config';
 import { es } from '../i18n/es';
 import { en } from '../i18n/en';
 import '../styles/global.css';
@@ -46,7 +46,7 @@ const pageDescription = description || defaultDescription;
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   </head>
-  <body class="min-h-screen" data-wa-number={WHATSAPP_NUMBER}>
+  <body class="min-h-screen" data-wa-encoded={WHATSAPP_NUMBER_ENCODED}>
     <slot />
 
     <!-- i18n: detect language and apply -->

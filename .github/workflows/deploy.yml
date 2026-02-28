@@ -32,6 +32,11 @@ jobs:
 
       - name: Build site
         run: npm run build
+        env:
+          WHATSAPP_NUMBER: ${{ secrets.WHATSAPP_NUMBER }}
+          FORM_ENDPOINT: ${{ secrets.FORM_ENDPOINT }}
+          MAINTENANCE_MODE: ${{ vars.MAINTENANCE_MODE }}
+          INSTAGRAM_URL: ${{ vars.INSTAGRAM_URL }}
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
