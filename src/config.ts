@@ -19,7 +19,7 @@ export const WHATSAPP_NUMBER_ENCODED = JSON.stringify(
 
 /** Texto pre-llenado para WhatsApp (sin URL-encode, se codifica automaticamente) */
 export const WHATSAPP_PREFILL_TEXT_ES =
-  '¡Hola! Quiero reservar la experiencia de arepas. Somos ___ personas. Me gustaría para el día ___ / horario ___. ¿Hay disponibilidad?';
+  '¡Hola! Quiero reservar la Experiencia de Arepas with Friends. Somos __ personas y nos interesa esta fecha: ______';
 
 export const WHATSAPP_PREFILL_TEXT_EN =
   "Hi! I'd like to book the arepa experience. We are ___ people. I'd like it for ___ / time ___. Is it available?";

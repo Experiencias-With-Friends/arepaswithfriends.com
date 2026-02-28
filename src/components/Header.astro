@@ -29,7 +29,8 @@ import { IMAGES, INSTAGRAM_URL, whatsappUrl } from '../config';
         <span class="i18n-en">Photos</span>
       </a>
       <a href="/faq" class="text-white/90 hover:text-arepa-light transition-colors text-sm font-medium">
-        FAQ
+        <span class="i18n-es">Preguntas frecuentes</span>
+        <span class="i18n-en">FAQ</span>
       </a>
       <a href="/#reservar" class="text-white/90 hover:text-arepa-light transition-colors text-sm font-medium">
         <span class="i18n-es">Contacto</span>
@@ -96,7 +97,8 @@ import { IMAGES, INSTAGRAM_URL, whatsappUrl } from '../config';
     <span class="i18n-en">Photos</span>
   </a>
   <a href="/faq" class="mobile-nav-link text-white text-xl font-medium hover:text-arepa-light transition-colors">
-    FAQ
+    <span class="i18n-es">Preguntas frecuentes</span>
+    <span class="i18n-en">FAQ</span>
   </a>
   <a href="/#reservar" class="mobile-nav-link text-white text-xl font-medium hover:text-arepa-light transition-colors">
     <span class="i18n-es">Contacto</span>
@@ -171,7 +173,7 @@ import { IMAGES, INSTAGRAM_URL, whatsappUrl } from '../config';
       var lang = document.documentElement.classList.contains('lang-en') ? 'en' : 'es';
       var enc = JSON.parse(document.body.dataset.waEncoded || '[]');
       var number = enc.map(function(c) { return String.fromCharCode(c ^ 42); }).join('');
-      var textEs = '¡Hola! Quiero reservar la experiencia de arepas. Somos ___ personas. Me gustaría para el día ___ / horario ___. ¿Hay disponibilidad?';
+      var textEs = '¡Hola! Quiero reservar la Experiencia de Arepas with Friends. Somos __ personas y nos interesa esta fecha: ______';
       var textEn = "Hi! I'd like to book the arepa experience. We are ___ people. I'd like it for ___ / time ___. Is it available?";
       var text = lang === 'en' ? textEn : textEs;
       var url = 'https://wa.me/' + number + '?text=' + encodeURIComponent(text);

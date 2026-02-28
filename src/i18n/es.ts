@@ -9,13 +9,13 @@ export const es = {
   navQueVasAHacer: '¿Qué vas a hacer?',
   navLugar: 'Nuestro Quincho',
   navFotos: 'Fotos',
-  navFaq: 'FAQ',
+  navFaq: 'Preguntas frecuentes',
   navContacto: 'Contacto',
   navReservar: 'Reservar por WhatsApp',
 
   // Hero
   heroTitle: 'AREPAS WITH FRIENDS',
-  heroSubtitle: 'Aprende a hacer AUTÉNTICAS arepas VENEZOLANAS con tus amigos:',
+  heroSubtitle: 'Aprendé a hacer AUTÉNTICAS arepas VENEZOLANAS con tus amigos:',
   heroSubtitle2: 'cocina, risas y degustación',
   heroLocation: '📍 Disponible en nuestro quincho o a domicilio',
   heroBullet1: '✔ Elaboración de arepas desde cero',
@@ -80,7 +80,7 @@ export const es = {
   faqQ3: '¿Dónde se realiza la experiencia?',
   faqA3: 'Sugerimos realizarlo en nuestro quincho, el cual cuenta con las comodidades y está pensado para disfrutar por completo la experiencia. Sin embargo, podemos ir a tu domicilio.',
   faqQ4: '¿Cómo funciona la experiencia a domicilio?',
-  faqA4: 'Nosotros llevamos todos los materiales e ingredientes necesarios para la elaboración de las arepas. Solo necesitamos una cocina disponible para preparar las arepas y vajilla completa acorde a la cantidad de personas. Para más detalles, condiciones y disponibilidad, consultános por privado vía WhatsApp.',
+  faqA4: 'Nosotros llevamos todos los materiales e ingredientes necesarios para la elaboración de las arepas. Solo necesitamos una cocina disponible para preparar las arepas y vajilla completa acorde a la cantidad de personas. Para más detalles, condiciones y disponibilidad, consultanos por privado vía WhatsApp.',
   faqQ5: '¿Qué incluye la experiencia?',
   faqA5: 'Participación completa en la elaboración, degustación de arepas con distintos rellenos previamente preparados y 1 bebida sin alcohol individual por persona. Pero tenemos a la venta variedad de bebidas adicionales. Consultar al momento de la reserva.',
   faqQ6: '¿Necesito saber cocinar?',
@@ -88,6 +88,6 @@ export const es = {
   faqQ7: '¿Cómo se reserva?',
   faqA7: 'La reserva de fecha se realiza exclusivamente por WhatsApp. Escribinos indicando cantidad de personas y fecha deseada.',
   faqQ8: 'No queremos cocinar, solo comer... ¿Tienen servicio de catering?',
-  faqA8: 'Sí, contamos con servicio de catering. En este caso, nuestro equipo prepara las arepas al momento y se sirven a los comensales. Recuerda que se deben comer recién hechas y calientes para una mejor experiencia.',
+  faqA8: 'Sí, contamos con servicio de catering. En este caso, nuestro equipo prepara las arepas al momento y se sirven a los comensales. Recordá que se deben comer recién hechas y calientes para una mejor experiencia.',
   faqQ9: '¿Cuáles son los rellenos disponibles?',
 } as const;
