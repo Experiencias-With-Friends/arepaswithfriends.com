@@ -49,43 +49,31 @@ npm run build && npm run preview
 
 ### Environment variables
 
-**Secrets** (sensitive — encrypted in GitHub):
+All variables use the `PUBLIC_` prefix so Vite/Astro exposes them at build time.
+
+**Variables** (non-sensitive — plaintext in GitHub, Settings → Secrets and variables → Actions → Variables):
 
 | Variable | Description |
 |----------|-------------|
-| `WHATSAPP_NUMBER` | Phone number in international format without `+` (e.g. `5491112345678`) |
-| `FORM_ENDPOINT` | Formspree form URL (e.g. `https://formspree.io/f/xxxxxxxx`) |
-
-**Variables** (non-sensitive — plaintext in GitHub):
-
-| Variable | Description |
-|----------|-------------|
-| `MAINTENANCE_MODE` | `true` to show only the maintenance page, `false` otherwise |
-| `INSTAGRAM_URL` | Full Instagram profile URL |
+| `PUBLIC_MAINTENANCE_MODE` | `true` to show only the maintenance page, `false` otherwise |
+| `PUBLIC_INSTAGRAM_URL` | Full Instagram profile URL |
+| `PUBLIC_WHATSAPP_NUMBER` | Phone number in international format without `+` (e.g. `5491112345678`) |
+| `PUBLIC_FORM_ENDPOINT` | Formspree form URL (e.g. `https://formspree.io/f/xxxxxxxx`) |
 
 ### GitHub Actions (CI/CD)
 
-In CI the values come from GitHub Secrets and Variables, not from `.env` files. All must be set at **repository level** (not environment level) so they are available to the build job.
+In CI the values come from GitHub Variables and Secrets, not from `.env` files. All must be set at **repository level** (not environment level) so they are available to the build job.
 
 **Adding secrets** (Settings → Secrets and variables → Actions → Secrets):
 
 | Secret | Description |
 |--------|-------------|
-| `WHATSAPP_NUMBER` | Phone number in international format without `+` |
-| `FORM_ENDPOINT` | Formspree form URL |
 | `NOTIFY_EMAIL_USER` | Gmail address used to send deploy notifications |
 | `NOTIFY_EMAIL_PASS` | Gmail App Password for the above account (not the login password) |
 | `NOTIFY_EMAIL_TO` | Email address that receives deploy notifications |
 
-**Adding variables** (Settings → Secrets and variables → Actions → Variables):
-
-| Variable | Description |
-|----------|-------------|
-| `MAINTENANCE_MODE` | `true` to show only the maintenance page, `false` otherwise |
-| `INSTAGRAM_URL` | Full Instagram profile URL |
-
 **Deploy notifications:**
-An email is sent after every deploy (success or failure) to `NOTIFY_EMAIL_TO`. The email includes build/deploy results, the triggering commit, and the values of `MAINTENANCE_MODE` and `INSTAGRAM_URL`.
+An email is sent after every deploy (success or failure) to `NOTIFY_EMAIL_TO`. The email includes build/deploy results, the triggering commit, and the values of all `PUBLIC_` variables.
 
 To generate a Gmail App Password: [myaccount.google.com/apppasswords](https://myaccount.google.com/apppasswords) (requires 2FA enabled on the Gmail account).
 
