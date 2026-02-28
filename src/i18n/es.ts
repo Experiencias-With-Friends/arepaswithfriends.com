@@ -78,7 +78,7 @@ export const es = {
   faqQ2: '¿Para cuántas personas es?',
   faqA2: 'Está pensada para grupos entre 4 y 10 personas.',
   faqQ3: '¿Dónde se realiza la experiencia?',
-  faqA3: 'Sugerimos realizarlo en Nuestro Quincho, el cual cuenta con las comodidades y está pensado para disfrutar por completo la experiencia. Sin embargo, podemos ir a tu domicilio.',
+  faqA3: 'Sugerimos realizarlo en nuestro quincho, el cual cuenta con las comodidades y está pensado para disfrutar por completo la experiencia. Sin embargo, podemos ir a tu domicilio.',
   faqQ4: '¿Cómo funciona la experiencia a domicilio?',
   faqA4: 'Nosotros llevamos todos los materiales e ingredientes necesarios para la elaboración de las arepas. Solo necesitamos una cocina disponible para preparar las arepas y vajilla completa acorde a la cantidad de personas. Para más detalles, condiciones y disponibilidad, consultános por privado vía WhatsApp.',
   faqQ5: '¿Qué incluye la experiencia?',
@@ -87,4 +87,7 @@ export const es = {
   faqA6: 'No, está pensado para que cualquiera pueda participar y disfrutar.',
   faqQ7: '¿Cómo se reserva?',
   faqA7: 'La reserva de fecha se realiza exclusivamente por WhatsApp. Escribinos indicando cantidad de personas y fecha deseada.',
+  faqQ8: 'No queremos cocinar, solo comer... ¿Tienen servicio de catering?',
+  faqA8: 'Sí, contamos con servicio de catering. En este caso, nuestro equipo prepara las arepas al momento y se sirven a los comensales. Recuerda que se deben comer recién hechas y calientes para una mejor experiencia.',
+  faqQ9: '¿Cuáles son los rellenos disponibles?',
 } as const;
