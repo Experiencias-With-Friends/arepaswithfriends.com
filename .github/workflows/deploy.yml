@@ -33,14 +33,14 @@ jobs:
 
       - name: Build site
         run: |
-          printf "MAINTENANCE_MODE=%s\nWHATSAPP_NUMBER=%s\nINSTAGRAM_URL=%s\nFORM_ENDPOINT=%s\n" \
-            "$MAINTENANCE_MODE" "$WHATSAPP_NUMBER" "$INSTAGRAM_URL" "$FORM_ENDPOINT" > .env.production
+          printf "PUBLIC_MAINTENANCE_MODE=%s\nPUBLIC_WHATSAPP_NUMBER=%s\nPUBLIC_INSTAGRAM_URL=%s\nPUBLIC_FORM_ENDPOINT=%s\n" \
+            "$PUBLIC_MAINTENANCE_MODE" "$PUBLIC_WHATSAPP_NUMBER" "$PUBLIC_INSTAGRAM_URL" "$PUBLIC_FORM_ENDPOINT" > .env.production
           npm run build
         env:
-          WHATSAPP_NUMBER: ${{ secrets.WHATSAPP_NUMBER }}
-          FORM_ENDPOINT: ${{ secrets.FORM_ENDPOINT }}
-          MAINTENANCE_MODE: ${{ vars.MAINTENANCE_MODE }}
-          INSTAGRAM_URL: ${{ vars.INSTAGRAM_URL }}
+          PUBLIC_WHATSAPP_NUMBER: ${{ vars.PUBLIC_WHATSAPP_NUMBER }}
+          PUBLIC_FORM_ENDPOINT: ${{ vars.PUBLIC_FORM_ENDPOINT }}
+          PUBLIC_MAINTENANCE_MODE: ${{ vars.PUBLIC_MAINTENANCE_MODE }}
+          PUBLIC_INSTAGRAM_URL: ${{ vars.PUBLIC_INSTAGRAM_URL }}
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
@@ -75,7 +75,7 @@ jobs:
           subject: >-
             [${{ needs.deploy.result == 'success' && needs.build.result == 'success' && 'SUCCESS' || 'FAILURE' }}]
             arepaswithfriends.com —
-            MAINTENANCE MODE: ${{ vars.MAINTENANCE_MODE == 'true' && 'ON' || 'OFF' }}
+            MAINTENANCE MODE: ${{ vars.PUBLIC_MAINTENANCE_MODE == 'true' && 'ON' || 'OFF' }}
           body: |
             Deploy report for arepaswithfriends.com
             ========================================
@@ -89,7 +89,9 @@ jobs:
             Workflow run: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
 
             --- Variables ---
-            MAINTENANCE_MODE: ${{ vars.MAINTENANCE_MODE }}
-            INSTAGRAM_URL:    ${{ vars.INSTAGRAM_URL }}
+            PUBLIC_MAINTENANCE_MODE: ${{ vars.PUBLIC_MAINTENANCE_MODE }}
+            PUBLIC_INSTAGRAM_URL:    ${{ vars.PUBLIC_INSTAGRAM_URL }}
+            PUBLIC_WHATSAPP_NUMBER:  ${{ vars.PUBLIC_WHATSAPP_NUMBER }}
+            PUBLIC_FORM_ENDPOINT:    ${{ vars.PUBLIC_FORM_ENDPOINT }}
 
-            ${{ vars.MAINTENANCE_MODE == 'true' && '⚠️  SITE IS IN MAINTENANCE MODE — visitors see the holding page.' || '✅  Site deployed normally — all sections visible.' }}
+            ${{ vars.PUBLIC_MAINTENANCE_MODE == 'true' && '⚠️  SITE IS IN MAINTENANCE MODE — visitors see the holding page.' || '✅  Site deployed normally — all sections visible.' }}

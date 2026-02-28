@@ -4,11 +4,11 @@
 // ============================================
 
 /** Modo mantenimiento: true = muestra solo el hero sin navegacion ni links */
-export const MAINTENANCE_MODE = import.meta.env.MAINTENANCE_MODE === 'true';
+export const MAINTENANCE_MODE = import.meta.env.PUBLIC_MAINTENANCE_MODE === 'true';
 
 /** Numero de WhatsApp en formato internacional (sin +).
- *  Leído desde la variable de entorno WHATSAPP_NUMBER (no se hardcodea en el repo). */
-const WHATSAPP_NUMBER = import.meta.env.WHATSAPP_NUMBER ?? '';
+ *  Leído desde la variable de entorno PUBLIC_WHATSAPP_NUMBER (no se hardcodea en el repo). */
+const WHATSAPP_NUMBER = import.meta.env.PUBLIC_WHATSAPP_NUMBER ?? '';
 
 /** XOR-encoded number to avoid plain-text scraping. Decoded by client JS at runtime. */
 export const WHATSAPP_NUMBER_ENCODED = JSON.stringify(
@@ -23,10 +23,10 @@ export const WHATSAPP_PREFILL_TEXT_EN =
   "Hi! I'd like to book the arepa experience. We are ___ people. I'd like it for ___ / time ___. Is it available?";
 
 /** URL de Instagram */
-export const INSTAGRAM_URL = import.meta.env.INSTAGRAM_URL ?? '';
+export const INSTAGRAM_URL = import.meta.env.PUBLIC_INSTAGRAM_URL ?? '';
 
 /** Endpoint del formulario (Formspree u otro servicio). Crear cuenta gratis en https://formspree.io */
-export const FORM_ENDPOINT = import.meta.env.FORM_ENDPOINT ?? '';
+export const FORM_ENDPOINT = import.meta.env.PUBLIC_FORM_ENDPOINT ?? '';
 
 /** Nombre del sitio */
 export const SITE_NAME = 'Arepas With Friends';
