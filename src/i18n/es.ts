@@ -7,7 +7,7 @@ export const es = {
   // Nav
   navExperiencia: 'La experiencia',
   navQueVasAHacer: '¿Qué vas a hacer?',
-  navLugar: 'El lugar',
+  navLugar: 'Nuestro Quincho',
   navFotos: 'Fotos',
   navFaq: 'FAQ',
   navContacto: 'Contacto',
@@ -39,7 +39,7 @@ export const es = {
   whatBullet5: 'Disfrutar la experiencia compartiendo en grupo',
 
   // El lugar
-  placeTitle: 'El lugar',
+  placeTitle: 'Nuestro Quincho',
   placeText:
     'Un espacio agradable, cálido y cómodo, ideal para cocinar en grupo y pasarla bien. Pensado para que te sientas en casa.',
 
